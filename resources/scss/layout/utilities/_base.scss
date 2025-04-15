@@ -1,0 +1,66 @@
+// Global
+@use "../../utilities/fonts" as *;
+
+* {
+    font-family: $ubuntu;
+}
+
+button {
+    padding: 0;
+    outline: none;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.cke {
+    padding: 0 !important;
+}
+.cke_reset {
+    width: 100% !important;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100vw;
+    scroll-padding-top: 20px;
+}
+
+body {
+    max-width: 100vw;
+}
+
+.container {
+    padding: 0 20px;
+    height: 100%;
+}
+
+.message-error{
+    color: var(--Secondary, #FF485A);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

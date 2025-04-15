@@ -1,0 +1,236 @@
+.btn-blue{
+    display: flex;
+    height: 48px;
+    padding: 14px 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    background: var(--Blue, #A8C3A6);
+
+    color: var(--v1-white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    outline: none;
+    box-shadow: none;
+    &.outline{
+        
+        color: var(--Blue, #A8C3A6);
+        background: var(--v1-white, #FFF);
+        
+        border: 1px solid var(--Blue, #A8C3A6);
+    }
+
+    &.quiz{
+        padding: 16px 34px;
+        height: unset;
+    }
+
+    &.zoom{
+        padding: 10px 12px;
+        height: unset;
+    }
+
+    &.login{
+        padding: 15.631px 27.971px;
+        font-size: 19.744px;
+        height: unset;
+    }
+
+    &.add{
+        font-size: 16px;
+        padding: 16px 20px;
+        border-radius: 8px;
+    }
+}
+
+.btn-ijo{
+    display: flex;
+    height: 76px;
+    padding: 17px 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    border-radius: 9000px;
+    background: var(--Green, #26B07D);
+    color: var(--v1-white, #FFF);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &.daun{
+        width: fit-content;
+        background: #2DC035;
+    }
+
+    &.modul{
+        padding: 16px 34px;
+        height: unset;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+
+    &.form{
+        height: 48px;
+        padding: 14px 34px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+
+.btn-white{
+    display: flex;
+    // height: 82px;
+    height: 76px !important;
+    padding: 19.821px 52.14px;
+    justify-content: center;
+    align-items: center;
+    gap: 16.184px;
+
+    border-radius: 6473.685px;
+    background: #FFF;
+
+    color: #000;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-abu{
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: #E9E9E9;
+    height: 48px;
+
+    color: #585858;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-oren{
+    display: flex;
+    height: 48px;
+    padding: 14px 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    background: var(--Blue, #FF4218);
+
+    color: var(--v1-white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-red{
+    display: flex;
+    height: 48px;
+    padding: 14px 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    background: #E64545;
+
+    color: var(--v1-white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    outline: none;
+    box-shadow: none;
+}
+
+.atur-quiz{
+    border-radius: 4px;
+    
+    background: var(--Blue, #A8C3A6);
+    display: flex;
+    height: 32px;
+    padding: 15px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+    color: var(--v1-white, #FFF);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+
+// badge punya 
+
+.badge-white{
+    display: flex;
+    height: 15px;
+    padding: 15px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 1000000000px;
+    background: #FFF;
+
+    color: #26B07D;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.172px; /* 151.435% */
+    text-transform: capitalize;
+}
+
+.badge-ijo{
+    display: flex;
+    height: 24px;
+    padding: 15px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 1000000000px;
+    background: #26B07D;
+    
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.172px; /* 151.435% */
+    text-transform: capitalize;
+
+    &.sm{
+        height: unset;
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,55 @@
+/* status & progress */
+.status{
+    display: flex;
+    height: 28px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 4px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &.active{
+        color: #FFF;
+        background: #5EE64E;
+    }
+
+    &.inactive{
+        color: #FFF;
+        background: #E64545;
+    }
+}
+
+.status-progress{
+    display: flex;
+    height: 24px;
+    padding: 15px 10px;
+    // padding: 20px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 1000000000px;
+    
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.172px; /* 151.435% */
+    text-transform: capitalize;
+    
+    &.progress{
+        color: #26B07D;
+        background: #FFF;
+    }
+
+    &.completed{
+        color: #FFF;
+        background: #26B07D;
+    }
+}

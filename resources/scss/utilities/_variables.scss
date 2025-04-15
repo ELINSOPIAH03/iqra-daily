@@ -1,0 +1,30 @@
+
+$black: #0B0D0D;
+$white: #fff;
+
+// breakpoints - min width
+$mobile-bkp: 576px;
+$tablet-bkp: 767px;
+$big-tablet-bkp: 992px;
+$laptop-bkp: 1200px;
+$mac-bkp: 1380px;
+$zoom125-bkp: 1500px;
+$desktop-bkp: 1800px;
+
+$tablet-container: 720px;
+$big-tablet-container: 960px;
+$laptop-container: 1140px;
+$zoom125-container: 1294px;
+$desktop-container: 1550px;
+
+@media (min-width: $zoom125-bkp) {
+    .container {
+        max-width: $zoom125-container;
+    }
+}
+
+@media (min-width: $desktop-bkp) {
+    .container {
+        max-width: $desktop-container;
+    }
+}

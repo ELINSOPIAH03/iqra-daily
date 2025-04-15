@@ -1,0 +1,113 @@
+/*------------------------------------ 
+        SECTION BOTTOM GENERAL LANDING
+--------------------------------------*/
+
+.s-contact-us{
+    display: flex;
+    padding: 60px 0px;
+    background: var(--Green, #26B07D);
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        width: 600px;
+        height: 200px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='601' height='215' viewBox='0 0 601 215' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M327.925 0.319163C385.15 4.31718 423.371 52.8049 467.167 89.8545C517.778 132.67 588.044 163.611 598.357 229.096C609.517 299.96 567.635 367.456 519.223 420.395C468.257 476.127 403.341 520.823 327.925 524.818C248.915 529.004 173.871 494.907 115.226 441.795C53.2642 385.679 -10.2691 311.875 1.39508 229.096C12.5608 149.856 102.227 114.855 167.765 68.9369C217.214 34.2915 267.694 -3.88886 327.925 0.319163Z' fill='white' fill-opacity='0.2'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-inner{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        p{
+            margin-bottom: 0;
+            &.title{
+                color: #FFF;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            &.desc{
+                color: #FFF;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.56px;
+            }
+        }
+    }
+}
+
+.s-contact-us-v2{
+    display: flex;
+    padding: 60px 0px;
+    background: var(--Blue, #004098);
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 500px;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg width='491' height='251' viewBox='0 0 491 251' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M332.03 386.017C281.574 421.283 264.535 499.749 204.814 514.681C144.136 529.852 70.4992 508.406 28.7301 461.851C-12.5965 415.789 25.6564 337.516 -3.23716 282.792C-35.6999 221.307 -134.107 203.479 -144.021 134.661C-153.606 68.1328 -105.27 -1.23118 -49.577 -38.8639C3.71043 -74.8713 74.9465 -65.2208 138.643 -56.3409C185.649 -49.7878 216.893 -0.913265 264.002 4.8521C327.806 12.6606 402.938 -60.1122 451.542 -18.0471C496.842 21.1582 434.653 98.0891 440.612 157.701C446.266 214.261 509.619 267.378 485.207 318.709C460.759 370.116 378.688 353.408 332.03 386.017Z' fill='white' fill-opacity='0.1'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-inner{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        p{
+            margin-bottom: 0;
+            &.title{
+                color: #FFF;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            &.desc{
+                color: #FFF;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.56px;
+            }
+        }
+    }
+}
+
+.bubble-wa{
+    position: fixed;
+    bottom: 10%;
+    right: 26px;
+    z-index: 10;
+
+    display: flex;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 16.184px;
+    flex-shrink: 0;
+    border-radius: 6473.685px;
+    background: #2DC035;
+    box-shadow: 18px 33px 10px 0px rgba(0, 0, 0, 0.00), 12px 21px 10px 0px rgba(0, 0, 0, 0.01), 7px 12px 8px 0px rgba(0, 0, 0, 0.05), 3px 5px 6px 0px rgba(0, 0, 0, 0.09), 1px 1px 3px 0px rgba(0, 0, 0, 0.10);
+}

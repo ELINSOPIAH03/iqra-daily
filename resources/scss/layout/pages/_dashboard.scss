@@ -1,0 +1,715 @@
+.p-dashboard{
+    width: 100%;
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    .wrapp-content{
+        width: calc(100% - 219px);
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+        padding: 30px;
+        align-items: flex-start;
+        background: #FDFAFA;
+    
+        .wrapp-summary{
+            width: 100%;
+            display: grid;
+            gap: 25px;
+
+            &.gtc{
+                grid-template-columns: 1fr;
+                width: 100%;
+                
+                @media (min-width: 767px) {
+                    grid-template-columns: 3fr 3fr 5fr;
+                    // grid-template-columns: 27.5% 27.5% 45%;
+                }
+            }
+            
+            .summary{
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                // align-items: center;
+                gap: 21px;
+
+                border-radius: 10px;
+                background: var(--v1-white, #FFF);
+                box-shadow: 0px 18.059px 18.059px 0px rgba(209, 209, 209, 0.05);
+
+                .title{
+                    color: var(--v1-black, #181B32);
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-family: Ubuntu;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px; /* 111.111% */
+                    margin-bottom: 0;
+                }
+
+                .wrapp-user{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 11px;
+                    .item{
+                        display: flex;
+                        padding: 13px 10px;
+                        align-items: center;
+                        gap: 18px;
+                        align-self: stretch;
+
+                        color: var(--v1-gray, #969696);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        
+
+                        &:nth-child(odd){
+                            border-radius: 5px;
+                            background: #FAFBFC;
+                        }
+
+                        .kotak{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 8px;
+                            background: #D9D9D9;
+                        }
+                    }
+
+                    .user-name{
+                        display: flex;
+                        padding: 13px 10px;
+                        align-items: center;
+                        gap: 18px;
+                        align-self: stretch;
+
+                        color: #434343;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        &:nth-child(odd){
+                            border-radius: 5px;
+                            background: #FAFBFC;
+                        }
+
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 24px;
+                            background: url(<path-to-image>) lightgray 50% / cover no-repeat, #D9D9D9;
+                        }
+                    }
+
+                    .item-courses{
+                        width: 100%;
+                        display: flex;
+                        padding: 13px 10px;
+                        align-items: center;
+                        gap: 18px;
+                        align-self: stretch;
+                        justify-content: space-between;
+
+                        
+                        &:nth-child(odd){
+                            border-radius: 5px;
+                            background: #FAFBFC;
+                        }
+                        
+                        .avatar{
+                            width: 34px;
+                            align-self: stretch; 
+                            border-radius: 8px;
+                        }
+
+                        p{
+                            margin-bottom: 0;
+                            &.title{
+                                color: #232323;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+
+                            &.name{
+                                color: #8E8E8E;
+                                font-family: Ubuntu;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                            &.number{
+                                color: var(--v1-gray, #969696);
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        /* ---------------------------
+            HALAMAN TUTOR & STUDENT
+        ------------------------------ */
+
+        .wrapp-tutor{
+            display: flex;
+            padding: 20px;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+
+            border-radius: 15px;
+            background: var(--v1-white, #FFF);
+
+            .avatar-pp{
+                width: 122px;
+                align-self: stretch;
+                border-radius: 112px;
+            }
+
+            .wrapp-information{
+                width: calc(100% - 122px);
+                display: flex;
+                .wrapp-data{
+                    display: flex;
+                    padding: 0px 20px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    .item{
+                        display: flex;
+                        padding: 12px 0px;
+                        align-items: center;
+                        gap: 16px;
+                        align-self: stretch;
+
+                        p{
+                            margin-bottom: 0;
+                            &.label{
+                                color: var(--v1-black, #181B32);
+                                font-feature-settings: 'liga' off, 'clig' off;
+                                font-family: Ubuntu;
+                                font-size: 13px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+
+                            &.value{
+                                color: var(--v1-light-gray, #969696);
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 17px; /* 141.667% */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        /* ------------------------------------------
+            DIGUNAKAN TUTOR & KURSUS & DETAIL KURSUS
+        --------------------------------------------- */
+
+        .wrapp-nav-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .nav-tabs{
+                width: 100%;
+                .nav-link{
+                    width: 50%;
+                    display: flex;
+                    height: 56px;
+                    padding: 16px 20px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    background: #E5E5E5;
+
+                    color: #818181;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    &.active{
+                        background: var(--Blue, #004098);
+                        color: #FFF;
+                        font-weight: 700;
+                    }
+                }
+
+                #kursus-tab, #pretest-tab, #bab-tab2{
+                    border-top-left-radius: 15px;
+                }
+                
+                #student-tab, #bab-tab{
+                    border-top-right-radius: 15px;
+                }
+            }
+
+            .tab-content{
+                display: flex;
+                padding: 24px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                align-self: stretch;
+                background: #FFF;
+
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+
+        /* ---------------------------------------
+            HALAMAN KURSUS & EDIT BAB & ATUR QUIZ
+        ------------------------------------------ */
+
+        .wrapp-form-kursus{
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            align-self: stretch;
+            .wrapp-img{
+                width: 33%;
+                img{
+                    width: 100%;
+                    &.img-upload{
+                        border-radius: 8px;
+                        object-fit: cover;
+                        object-position: center;
+                        max-width: 374px;
+                        min-height: 424px;
+                        max-height: 424px;
+                    }
+                }
+            }
+
+            .wrapp-right{
+                width: calc(100% - 33%);
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+
+        .wrapp-item-pertanyaan,
+        .wrapp-item-bab{
+            margin-bottom: 19px;
+            display: flex;
+            padding-bottom: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            align-self: stretch;
+
+            border-radius: 11px;
+            border: 1px solid #C0C0C0;
+            background: var(--v1-white, #FFF);
+
+            .head{
+                display: flex;
+                padding: 10px 20px;
+                justify-content: space-between;
+                align-items: center;
+                align-self: stretch;
+                background: #F1F4F7;
+
+                color: var(--v1-black, #181B32);
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                border-top-right-radius: 11px;
+                border-top-left-radius: 11px;
+
+                img{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+
+            .wrapp-bottom{
+                width: 100%;
+                padding: 0px 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        /* ---------------------------
+            HALAMAN ATUR QUIZ
+        ------------------------------ */
+
+        .wrapp-atur-quiz{
+            width: 100%;
+            display: flex;
+            padding: 24px;
+            flex-direction: column;
+            align-items: flex-start;
+            // gap: 29px;
+            align-self: stretch;
+
+            border-radius: 12px;
+            background: var(--v1-white, #FFF);
+        }
+
+        /* ---------------------------------------
+            HALAMAN DETAIL KURSUS & DETAIL BAB
+        ------------------------------------------ */
+            
+        .wrapp-top{
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            // flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            align-self: stretch;
+
+            border-radius: 15px;
+            background: var(--v1-white, #FFF);
+
+            .wrapp-title{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                align-self: stretch;
+                // padding: 0px 16px;
+            }
+
+            .wrapp-stas{
+                display: flex;
+                width: 200px;
+                // width: 170px;
+                align-items: center;
+                gap: 16px;
+                // flex-shrink: 0;
+            }
+
+            img{
+                &.mini-tubnail{
+                    border-radius: 12px;
+                    width: 66px;
+                    height: 66px;
+                }
+
+                &.stas{
+                    width: 66px;
+                    height: 66px;
+                    border-radius: 9999999px;
+                }
+            }
+
+            p{
+                margin-bottom: 0;
+                &.title{
+                    color: #303030;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 140%; /* 22.4px */
+                }
+
+                &.text{
+                    color: #626262;
+                    font-size: 11.2px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                &.value{
+                    color: #303030;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 140%; /* 22.4px */
+                }
+
+                &.label{
+                    color: #AAA9A9;
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 15px; /* 107.143% */
+                }
+
+                &.link{
+                    color: #555;
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 15px; /* 125% */
+                    text-decoration-line: underline;
+                    white-space: wrap;
+                    text-underline-position: from-font;
+                }
+
+                &.modul{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    color: #555;
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 15px; /* 125% */
+                }
+            }
+
+            .hr{
+                width: 1px;
+                height: 85px;
+                background: #BDBDBD;
+            }
+        }
+
+        /* ---------------------------------------
+            HALAMAN DETAIL BAB
+        ------------------------------------------ */
+
+        .wrapp-quiz{
+            display: flex;
+            width: 100%;
+            .wrapp-left{
+                width: calc(100% - 285px);
+            }
+
+            .wrapp-pertanyaan{
+                display: flex;
+                height: 1000px;
+                // height: calc(100vh - 120px);
+                padding: 36px 50px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 25px;
+                align-self: stretch;
+                overflow-y: scroll;
+                background: white;
+        
+                .title-judul{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    p{
+                        margin-bottom: 0;
+                        &.title{
+                            color: #7A7A7A;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 19.6px; /* 81.667% */
+                            &.black{
+                                color: #212121;
+                            }
+                        }
+                    }
+                }
+        
+                .announcement{
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    p{
+                        margin-bottom: 0;
+                        &.title{
+                            color: var(--v1-black, #181B32);
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 19.6px; /* 98% */
+                        }
+                        &.desc{
+                            color: #414141;
+                            font-size: 17px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 180%; /* 30.6px */
+                            letter-spacing: 0.34px;
+                        }
+                    }
+                }
+        
+                .question{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 15px;
+                    align-self: stretch;
+                    p{
+                        margin-bottom: 0;
+                        &.ques{
+                            color: #414141;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 180%; /* 36px */
+                            letter-spacing: 0.4px;
+                        }
+                    }
+                }
+            }
+
+            .wrapp-navigasi-pertanyaan{
+                display: flex;
+                width: 285px;
+                padding: 36px;
+                height: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                align-self: stretch;
+        
+                border-bottom: none !important;
+                border: 1px solid #A7A7A7;
+                background: #FFF;
+        
+                overflow-y: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                p{
+                    margin-bottom: 0;
+                    &.title{
+                        color:  #181B32;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18.172px; /* 90.861% */
+                        text-transform: capitalize;
+                    }
+                }
+        
+                .wrapp-kotak{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    row-gap: 16px;
+                    column-gap: 20px;
+                    .kotak{
+                        cursor: pointer;
+                        display: flex;
+                        padding: 20px 10px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        
+                        border-radius: 6px;
+                        border: 1px solid #D0D0D0;
+        
+                        color: #000;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18.172px; /* 90.861% */
+                        text-transform: capitalize;
+        
+                        &.last{
+                            color: white;
+        
+                            border: none;
+                            border-radius: 6px;
+                            background: var(--Green, #26B07D);
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ------------------------
+            HALAMAN PROFILE
+        --------------------------- */
+
+        .myprofile{
+            // margin-top: 120px;
+            // padding: 50px 0px;
+            width: 100%;
+            display: flex;
+            background: #FDFAFA;
+            &-inner{
+                display: flex;
+                flex-direction: column;
+                gap: 36px;
+                width: 100%;
+    
+                .card-profile{
+                    display: flex;
+                    padding: 30px;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 27px;
+                    align-self: stretch;
+    
+                    border-radius: 10px;
+                    background: var(--v1-white, #FFF);
+    
+                    .wrapp-photo{
+                        padding: 14.7px;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 600.2px;
+                        border: 1.901px dashed rgba(6, 38, 51, 0.49);
+    
+                        .img-upload{
+                            display: flex;
+                            max-width: 171.057px;
+                            max-height: 171.057px;
+                            width: 171.057px;
+                            height: 171.057px;
+                            justify-content: center;
+                            align-items: center;
+                            flex-shrink: 0;
+                            border-radius: 191.421px;
+                        }
+    
+                        .edit{
+                            position: absolute;
+                            bottom: 15px;
+                            right: 5px;
+    
+                        }
+                    }
+    
+                    p{
+                        margin-bottom: 0;
+                        &.text{
+                            color: var(--v1-black, #181B32);
+                            text-align: center;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: -0.18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

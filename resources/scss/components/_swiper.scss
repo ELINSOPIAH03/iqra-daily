@@ -1,0 +1,24 @@
+.wrapp-swipper{
+    width: 100%;
+    .swiper{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .swiper-wrapper{
+        width: 100% !important;
+    }
+
+    .swiper{
+        &.review{
+            .swiper-slide{
+                height: 100%;
+                display: flex;
+                width: 100%;
+                &:not(.swiper-slide-active){
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

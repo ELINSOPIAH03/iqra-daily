@@ -1,0 +1,30 @@
+// Width Custom
+@for $i from 1 through 100 {
+    .wx-#{$i} {
+        width: calc(#{$i} * 1%) !important;
+    }
+}
+
+// Height Custom
+@for $i from 1 through 100 {
+    .hx-#{$i} {
+        height: calc(#{$i} * 1%) !important;
+    }
+}
+
+@for $i from 1 through 2000 {
+    .h-#{$i}px {
+        height: #{$i}px !important;
+    }
+}
+
+// Gap bgt
+@for $i from 1 through 100{
+    .gap-#{$i}{
+        gap: #{$i}px !important;
+    }
+}
+
+.w-wrapp{
+    width: fit-content;
+}

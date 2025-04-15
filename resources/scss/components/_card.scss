@@ -1,0 +1,49 @@
+.wrapp-card-stas{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+
+    &.gtc-4{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    &.gtc-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .card-stat{
+        display: flex;
+        width: 100%;
+        padding: 24px 16px;
+        align-items: center;
+
+        gap: 17px;
+        border-radius: 10px;
+        background: var(--v1-white, #FFF);
+        box-shadow: 0px 18.059px 18.059px 0px rgba(112, 107, 107, 0.05);
+
+        img{
+            width: 60px;
+            height: 60.003px;
+        }
+
+        .name{
+            color: #AAA9A9;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px; /* 93.75% */
+        }
+
+        .value{
+            color:  #181B32;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: Ubuntu;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}

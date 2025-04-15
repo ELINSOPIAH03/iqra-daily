@@ -1,0 +1,56 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &-inner{
+        display: flex;
+        gap: 16px;
+        .backButton{
+            width: 24px;
+            height: 24px;
+            padding: 6.25px 4.75px 5.701px 4.25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            color: var(--dark, #313E47);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .wapp-account{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        img{
+            width: 43.314px;
+            height: 43.314px;
+            border-radius: 41.252px;
+        }
+
+        .name{
+            color: var(--v1-black, #181B32);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.36px;
+        }
+
+        .email{
+            color: #AAA9A9;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: 0.24px;
+        }
+    }
+}
