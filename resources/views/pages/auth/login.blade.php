@@ -35,7 +35,7 @@
                 {{--------------------------------------------------------------------}}
                 <div class="btn-blue d-flex gap-8 login" 
                     {{-- onclick="window.location.href='{{ $isTutor ? route('tutor.dashboard') : route('admin.dashboard') }}'" --}}
-                    {{-- onclick="window.location.href='{{ route('admin.dashboard') }}'" --}}
+                    onclick="window.location.href='{{ route('landing.index') }}'"
                     type="submit">
                     Masuk
                     <img src="{{ asset('assets/icons/ic-arrow-right.svg') }}" alt="">
