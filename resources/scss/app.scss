@@ -8,25 +8,17 @@
 
 //Components
 @use "./components/footer";
-@use "./components/navbar";
-@use "./components/sidebar";
 @use "./components/header";
-@use "./components/general";
 @use "./components/dropdown";
 @use "./components/button";
 @use "./components/input";
 @use "./components/swiper";
 @use "./components/modal";
-@use "./components/card-ulasan";
-@use "./components/card-kursus";
-@use "./components/card-sektor";
-@use "./components/card";
 @use "./components/datatable";
-@use "./components/status";
 @use "./components/select2";
 
 
 //Pages
-@use "./layout/pages/landing";
-@use "./layout/pages/auth";
-@use "./layout/pages/dashboard";
+// @use "./layout/pages/landing";
+// @use "./layout/pages/auth";
+// @use "./layout/pages/dashboard";
