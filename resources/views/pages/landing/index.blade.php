@@ -205,47 +205,6 @@
                 });
         }
 
-
-        // function tampilkanJadwalSalat(timings) {
-
-        //     const namaSalatKeys = ['Imsak', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
-        //     const namaSalatLabels = ['Imsak', 'Subuh', 'Terbit', 'Dzuhur', 'Ashar', 'Maghrib', 'Isya'];
-
-        //     const list = document.getElementById('waktu-sholat-list');
-        //     const items = list.querySelectorAll('div.bg-sage-50, div.bg-sage-300');
-
-
-        //     items.forEach((item, index) => {
-        //         const key = namaSalatKeys[index];
-        //         const labelText = namaSalatLabels[index];
-        //         const waktuText = timings[key];
-
-        //         if (!waktuText) return;
-
-        //         // Cari atau buat elemen p
-        //         let teksLabel = item.querySelector('.waktu-label');
-        //         let teksJam = item.querySelector('.waktu-jam');
-
-        //         if (!teksLabel || !teksJam) {
-        //             const wrapper = document.createElement('div');
-        //             wrapper.className = 'flex w-full justify-between items-center';
-
-        //             teksLabel = document.createElement('p');
-        //             teksLabel.className = 'text-lg sm:text-xl/6 waktu-label';
-
-        //             teksJam = document.createElement('p');
-        //             teksJam.className = 'text-lg sm:text-xl/6 waktu-jam';
-
-        //             wrapper.appendChild(teksLabel);
-        //             wrapper.appendChild(teksJam);
-        //             item.appendChild(wrapper);
-        //         }
-
-        //         teksLabel.textContent = labelText;
-        //         teksJam.textContent = waktuText;
-        //     });
-        // }
-
         function tampilkanJadwalSalat(timings) {
             const namaSalatKeys = ['Imsak', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
             const namaSalatLabels = ['Imsak', 'Subuh', 'Terbit', 'Dzuhur', 'Ashar', 'Maghrib', 'Isya'];
