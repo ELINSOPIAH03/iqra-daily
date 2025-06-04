@@ -64,3 +64,61 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+# Daily Iqra - Project Setup Guide
+
+This guide provides step-by-step instructions to set up and run the **Daily Iqra** project on your local development environment.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
+```
+git clone https://github.com/ELINSOPIAH03/iqra-daily
+cd daily-iqra
+```
+
+### 2. Copy Environment File
+```
+cp .env.example .env
+```
+
+### 3. Create a New Database
+daily-iqra
+
+### 4. Edit the .env File
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=daily-iqra
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 5. Install Dependencies
+```
+composer install
+npm install
+```
+
+### 6. Compile Assets for Production
+```
+npm run build
+npm run dev
+```
+
+### 7. Run Database Migration
+```
+php artisan migrate
+```
+
+### 8.  Start the Application
+```
+php artisan serve
+```
